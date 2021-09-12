@@ -1,0 +1,26 @@
+$small-mobile-width: 320px;
+$medium-mobile-width: 480px;
+$large-mobile-width: 600px;
+$small-tablet-width: 768px;
+$medium-tablet-width: 900px;
+$large-tablet-width: 1024px;
+$small-laptop-width: 1200px;
+$medium-laptop-width: 1600px;
+
+$device-widths: $small-mobile-width, $medium-mobile-width, $large-mobile-width,
+  $small-tablet-width, $medium-tablet-width, $large-tablet-width,
+  $small-laptop-width, $medium-laptop-width;
+
+$primary-color: #000;
+$secondary-color: #777;
+
+$light-background-1: #00f5d4;
+$light-background-2: #00bbf9;
+$light-background-3: #fee440;
+$light-background-4: #f15bb5;
+$light-background-5: #9b5de5;
+
+$light-backgrounds: $light-background-1, $light-background-2,
+  $light-background-3, $light-background-4, $light-background-5;
+
+$dark-background: #003459;

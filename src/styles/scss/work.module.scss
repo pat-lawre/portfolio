@@ -1,3 +1,11 @@
 @import "globals";
 @import "mixins";
 @import "variables";
+
+.wrapper {
+  @include flexbox(row, center, center);
+}
+
+.title {
+  font-size: 20rem;
+}

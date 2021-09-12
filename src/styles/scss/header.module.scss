@@ -11,31 +11,31 @@
   width: 100%;
 }
 
-.titlePrimary {
-  font-size: 3.5rem;
-  line-height: 6rem;
-}
-.titleSecondary {
-  font-size: 3.5rem;
-  color: gray;
+.secondaryText {
+  color: $secondary-color;
 }
 
-@media only screen and (max-width: 1200px) {
-  .titlePrimary {
-    font-size: 2.5rem;
-    line-height: 4rem;
-  }
-  .titleSecondary {
-    font-size: 2.5rem;
-  }
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 10vh auto 10vh auto;
 }
 
-@media only screen and (max-width: 1024px) {
-  .titlePrimary {
-    font-size: 1.5rem;
-    line-height: 3rem;
-  }
-  .titleSecondary {
-    font-size: 1.5rem;
+@for $i from 1 through 8 {
+  @media only screen and (min-width: nth($device-widths, $i)) {
+    $base-size: 0.4rem;
+    $size: $base-size * $i + (1 / (2 * $i));
+    .primaryText {
+      font-size: $size;
+      line-height: $size + $i * $base-size;
+    }
+    .secondaryText {
+      font-size: $size;
+    }
+
+    .icon {
+      width: $size;
+      height: $size;
+    }
   }
 }
