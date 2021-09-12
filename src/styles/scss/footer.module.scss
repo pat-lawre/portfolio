@@ -1,0 +1,36 @@
+@import "globals";
+@import "mixins";
+
+.wrapper {
+  @include flexbox(row, center, space-between);
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  background: black;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.container {
+  @include flexbox(row, center, space-between);
+  gap: 1rem;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}
+
+.text {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}

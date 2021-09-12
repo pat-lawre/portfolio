@@ -1,0 +1,41 @@
+@import "globals";
+@import "mixins";
+@import "variables";
+
+.wrapper {
+  @include flexbox(column, flex-start, center);
+}
+
+.container {
+  @include flexbox(column, flex-end, center);
+  width: 100%;
+}
+
+.titlePrimary {
+  font-size: 3.5rem;
+  line-height: 6rem;
+}
+.titleSecondary {
+  font-size: 3.5rem;
+  color: gray;
+}
+
+@media only screen and (max-width: 1200px) {
+  .titlePrimary {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .titleSecondary {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .titlePrimary {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .titleSecondary {
+    font-size: 1.5rem;
+  }
+}
