@@ -22,7 +22,7 @@ const Header = () => {
           <span className={styles.secondaryText}>
             and I'd love to work with you.
           </span>
-          <span className={styles.primaryText}>Come check out my work.</span>
+          <span className={styles.primaryText}>Come check out my stuff.</span>
         </div>
         <GoChevronDown class={styles.icon} />
       </div>

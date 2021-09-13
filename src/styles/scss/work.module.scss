@@ -3,9 +3,24 @@
 @import "variables";
 
 .wrapper {
-  @include flexbox(row, center, center);
+  @include flexbox(column, center, center);
+  gap: 2.5rem;
 }
 
-.title {
-  font-size: 20rem;
+@for $i from 1 through 8 {
+  @media only screen and (min-width: nth($device-widths, $i)) {
+    $base-size: 0.4rem;
+    $size: $base-size * $i + (1 / (2 * $i));
+    .title {
+      font-size: $size;
+    }
+  }
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }

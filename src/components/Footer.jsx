@@ -64,9 +64,7 @@ const Footer = () => {
         </a>
       </div>
       <div>
-        <span className={styles.text}>
-          Made using React, Node, Sass, and ❤️
-        </span>
+        <span className={styles.text}>Made using React, Node, and Sass</span>
         <i>
           <span className={styles.text}>
             © 2021 Patrick Lawrence. All Rights Reserved
