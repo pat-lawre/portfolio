@@ -4,28 +4,31 @@
 
 .wrapper {
   padding: 1vw;
+  @include flexbox(row, center, center);
   border-radius: 0.25rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
-  gap: 1vw;
+  gap: 1rem;
 }
 
 .image {
-  width: 100%;
+  width: 10rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 .subContainer {
   grid-column: 2;
-  @include flexbox(column, flex-start, flex-start);
+  @include flexbox(column, flex-start, center);
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .description {

@@ -18,9 +18,7 @@
 }
 
 .container {
-  display: grid;
-  width: 100%;
+  @include flexbox(row, flex-start, center);
   gap: 1rem;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  flex-wrap: wrap;
 }
