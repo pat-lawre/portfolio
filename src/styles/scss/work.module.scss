@@ -3,13 +3,18 @@
 @import "variables";
 
 .wrapper {
-  @include flexbox(column, center, center);
-  gap: 2.5rem;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
 }
 
 @for $i from 1 through 8 {
   @media only screen and (min-width: nth($device-widths, $i)) {
-    $base-size: 0.4rem;
+    $base-size: 1.6rem;
     $size: $base-size * $i + (1 / (2 * $i));
     .title {
       font-size: $size;
@@ -18,7 +23,9 @@
 }
 
 .container {
-  @include flexbox(row, flex-start, center);
-  gap: 1rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: auto;
+  gap: 1.5rem;
+  margin: 2rem 0;
 }

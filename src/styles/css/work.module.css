@@ -24,14 +24,6 @@ code {
   padding-top: 12.5vh;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-}
-
 @media only screen and (min-width: 320px) {
   .title {
     font-size: 0.9rem;
@@ -73,10 +65,8 @@ code {
   }
 }
 .container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 1rem;
 }

@@ -15,14 +15,32 @@ const Work = () => {
           <Card
             title="Example websites"
             description={exampleWebsitesCardDescription}
+            image="https://picsum.photos/1920/1080"
           />
           <Card
             title="Example websites"
             description={exampleWebsitesCardDescription}
+            image="https://picsum.photos/1920/1080"
           />
           <Card
             title="Example websites"
             description={exampleWebsitesCardDescription}
+            image="https://picsum.photos/1920/1080"
+          />
+          <Card
+            title="Example websites"
+            description={exampleWebsitesCardDescription}
+            image="https://picsum.photos/1920/1080"
+          />
+          <Card
+            title="Example websites"
+            description={exampleWebsitesCardDescription}
+            image="https://picsum.photos/1920/1080"
+          />
+          <Card
+            title="Example websites"
+            description={exampleWebsitesCardDescription}
+            image="https://picsum.photos/1920/1080"
           />
         </div>
       </div>

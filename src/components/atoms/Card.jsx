@@ -6,21 +6,16 @@ const Card = (props) => {
     <div
       className={styles.wrapper}
       style={{
-        gridRow: props.gridRow,
-        gridColumn: props.gridColumn,
+        backgroundImage:
+          "linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.2)),url(" +
+          props.image +
+          ")",
+        objectFit: "cover",
       }}
     >
       <div className={styles.container}>
-        <img
-          src="https://picsum.photos/200"
-          alt="card"
-          className={styles.image}
-        />
-        <div className={styles.subContainer}>
-          <span className={styles.title}>{props.title}</span>
-          <p className={styles.description}>{props.description}</p>
-          <span className={styles.tip}>Expand for more info</span>
-        </div>
+        <span className={styles.title}>{props.title}</span>
+        <p className={styles.description}>{props.description}</p>
       </div>
     </div>
   );

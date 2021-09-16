@@ -4,40 +4,40 @@
 
 .wrapper {
   padding: 1vw;
-  @include flexbox(row, center, center);
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  @include flexbox(column, center, center);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  height: 17rem;
+  color: white;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
-  gap: 1rem;
+  @include flexbox(column, center, center);
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: all 0.75s ease-in-out;
+  height: 100%;
+
+  &:hover {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.image {
-  width: 10rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-}
+@for $i from 1 through 8 {
+  @media only screen and (min-width: nth($device-widths, $i)) {
+    $base-size: 0.2rem;
+    $size: $base-size * $i + (1 / (2 * $i));
+    .title {
+      font-size: $size;
+    }
 
-.subContainer {
-  grid-column: 2;
-  @include flexbox(column, flex-start, center);
-}
+    .description {
+      font-size: $size * 0.75;
+    }
 
-.title {
-  font-size: 1.5rem;
-}
-
-.description {
-  margin: 0.5rem 0;
-  color: $secondary-color;
-}
-
-.tip {
-  align-self: flex-end;
-  margin-top: auto;
-  color: $secondary-color;
+    .tip {
+      font-size: $size * 0.75;
+    }
+  }
 }
