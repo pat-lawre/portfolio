@@ -34,19 +34,19 @@ const Footer = () => {
       </div>
       <div className={styles.container}>
         <a href="https://github.com/pat-lawre">
-          <FaGithub class={styles.icon} />
+          <FaGithub className={styles.icon} />
         </a>
         <a href="https://www.linkedin.com/in/pat-lawre/">
-          <FaLinkedinIn class={styles.icon} />
+          <FaLinkedinIn className={styles.icon} />
         </a>
         <a href="https://www.instagram.com/pat_lawre/">
-          <FaInstagram class={styles.icon} />
+          <FaInstagram className={styles.icon} />
         </a>
         <a href="https://twitter.com/pat_lawre">
-          <FaTwitter class={styles.icon} />
+          <FaTwitter className={styles.icon} />
         </a>
         <a href="https://www.facebook.com/patdashlawre">
-          <FaFacebookF class={styles.icon} />
+          <FaFacebookF className={styles.icon} />
         </a>
       </div>
       <div>

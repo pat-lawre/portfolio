@@ -10,7 +10,6 @@ const Card = (props) => {
           "linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.2)),url(" +
           props.image +
           ")",
-        objectFit: "cover",
       }}
     >
       <div className={styles.container}>

@@ -13,7 +13,7 @@ const Work = () => {
         <span className={styles.title}>Portfolio</span>
         <div className={styles.container}>
           <Card
-            title="Example websites"
+            title="Concept websites"
             description={exampleWebsitesCardDescription}
             image="https://picsum.photos/1920/1080"
           />

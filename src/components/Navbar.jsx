@@ -12,7 +12,7 @@ const Navbar = () => {
         <span className={styles.logoText}>pat-lawre</span>
       </div>
       <ul className={styles.linksList}>
-        <a href={resume} class={styles.resumeLink}>
+        <a href={resume} className={styles.resumeLink}>
           <li className={styles.link}>resume</li>
         </a>
         <li className={styles.link}>portfolio</li>

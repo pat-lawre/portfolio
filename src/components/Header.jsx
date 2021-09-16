@@ -24,7 +24,7 @@ const Header = () => {
           </span>
           <span className={styles.primaryText}>Come check out my stuff.</span>
         </div>
-        <GoChevronDown class={styles.icon} />
+        <GoChevronDown className={styles.icon} />
       </div>
     </div>
   );
